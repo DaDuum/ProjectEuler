@@ -56,7 +56,7 @@ function executeFunction05() {
         if (iterator % 3 == 0 || iterator % 5 == 0) {
             console.log(iterator)
             sum += iterator;
-              
+
         }
     }
     console.log(sum);
@@ -91,22 +91,81 @@ function executeFunction07() {
         a = b;
         b = temp;
         if (b >= cap) {
-            break;   
+            break;
         }
 
         if (b % 2 == 0) {
             evenNumbers += b;
-        }  
+        }
     }
     console.log(evenNumbers);
 }
 
 
-function executeFunction08() {
-    console.log('hell');     
-}
+//function executeFunction08() {
+//    var num = 20; 
+//    var newVal = 0;
+//    var primeNum = [];
 
-function executeFunction08() {
+//    for (var iterator = 2; iterator <= num; iterator++) {
+//        GeneratedPrime(iterator);
+
+
+//    }
+
+//    function GeneratedPrime(iterator_check) {
+//        for (var generatedNumForPrime = 2; generatedNumForPrime <= iterator_check; generatedNumForPrime++) {
+//            if (iterator_check % generatedNumForPrime == 0) {
+//                primeNum.push(generatedNumForPrime);
+//            }
+//        }
+
+//    }
+
+//    for (var value in primeNum) {
+//        console.log(value);
+//    }
+
+//}
+
+
+// Primal numbers - problem 3 - Project Euler
+function executeFunction09() {
+    var number = 13;
+    var primeNum = [];
+    var usedPrimes = [];
+    var topNum = 600851475143;
+    var topPrimeNumValue = 0;
+
+    function GenerateAndCheckPrimeNum() {
+        for (var iterator_1 = 2; iterator_1 <= topNum; iterator_1++) {
+            var isPrime = true;
+
+            for (var iterator_2 = 2; iterator_2 < iterator_1; iterator_2++) {
+                if (iterator_1 % iterator_2 === 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime === true) {
+
+                primeNum.push(iterator_1);
+            }
+            if (isPrime === true) {
+                if (topNum % iterator_1 === 0) {
+                    topNum = topNum / iterator_1;
+                    if (topPrimeNumValue < iterator_1) {
+                        topPrimeNumValue = iterator_1;
+                    }
+                    break;
+                }
+            }
+        }
+    }
+    while (topNum != 1) {
+        GenerateAndCheckPrimeNum();
+    }
+
+    console.log(topPrimeNumValue);
 
 }
 
