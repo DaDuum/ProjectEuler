@@ -1,4 +1,4 @@
-﻿function executeFunction05() {
+﻿function executeProblem001() {
     var sum = 0;
 
     for (iterator = 0; iterator < 1000; iterator++) {
@@ -11,7 +11,7 @@
 }
 
 // Multiples of 3 and 5 - Project Euler
-function executeFunction06() {
+function executeProblem01() {
     var endOfSequence = 100;
     var firstNum = 0;
     var secondNum = 1;
@@ -26,7 +26,7 @@ function executeFunction06() {
 }
 
 // sum of Even Fibonacci numbers - Project Euler
-function executeFunction07() {
+function executeProblem02() {
     var endOfSequence = 10000;
     var a = 0;
     var b = 1;
@@ -50,7 +50,7 @@ function executeFunction07() {
 }
 
 // Primal numbers - problem 3 - Project Euler
-function executeFunction09() {
+function executeProblem03() {
     var number = 13;
     var primeNum = [];
     var usedPrimes = [];
@@ -89,3 +89,8 @@ function executeFunction09() {
 
 }
 
+// Palindromic numbers - problem 4 - Project Euler
+
+function executeProblem04() {
+
+}
