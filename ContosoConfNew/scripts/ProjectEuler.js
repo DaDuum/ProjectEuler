@@ -92,5 +92,33 @@ function executeProblem03() {
 // Palindromic numbers - problem 4 - Project Euler
 
 function executeProblem04() {
+    var maxValue = 999;
+    var minValue = 1;
+    var palindromicNum = 0;
+    var temp = 0;
+
+    generatePalindromicNum();
+
+
+    function generatePalindromicNum() {
+        // do we want to go from "1", doesnt make a sence to multiple with "1";
+        for (iterator_1 = minValue; iterator_1 <= maxValue; iterator_1++) {
+            for (iterator_2 = minValue; iterator_2 <= maxValue; iterator_2++) {
+                var product = iterator_1 * iterator_2;
+
+                if (reverseNumber(product) == product.toString()) {
+                    if (palindromicNum < iterator_1 * iterator_2) {
+                        palindromicNum = iterator_1 * iterator_2;
+                    }
+                }
+            }
+        }
+    }
+    // https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb
+    function reverseNumber(num) {
+        return num.toString().split("").reverse().join("");
+    }
+
+    console.log(palindromicNum);
 
 }
