@@ -84,6 +84,7 @@
     <Content Include="indexMOD02.html" />
     <Content Include="index2.html" />
     <Content Include="positioning-index.html" />
+    <Content Include="ProjectEuler.html" />
     <Content Include="scripts\Arrays.js" />
     <Content Include="scripts\book02.js" />
     <Content Include="scripts\every-some.js" />
@@ -92,6 +93,7 @@
     <Content Include="scripts\ImplementationWebSocketAPI.js" />
     <Content Include="scripts\implementingProgramFlow_Arrays.js" />
     <Content Include="scripts\JavaScript.js" />
+    <Content Include="scripts\ProjectEuler.js" />
     <Content Include="scripts\Scripts.js" />
     <Content Include="showhide-index.html" />
     <Content Include="svg-index.html" />
