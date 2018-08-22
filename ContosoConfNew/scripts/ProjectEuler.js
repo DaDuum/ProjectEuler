@@ -122,3 +122,30 @@ function executeProblem04() {
     console.log(palindromicNum);
 
 }
+
+function executeProblem05() {
+
+    var numOfNum = 20; 
+    var stop = false;
+
+    for (iterator_1 = 1; !stop ; iterator_1++) {
+
+        for (iterator_2 = 1; iterator_2 <= numOfNum; iterator_2++) {
+            if (iterator_1 % iterator_2 != 0) {
+                break;
+            }
+
+            if (iterator_2 == numOfNum) {
+                console.log(iterator_1);
+                stop = true;
+            }
+        }
+        
+    }
+
+
+    
+
+
+}
+
