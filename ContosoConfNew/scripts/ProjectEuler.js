@@ -123,6 +123,8 @@ function executeProblem04() {
 
 }
 
+//  problem 5 - Project Euler
+
 function executeProblem05() {
 
     var numOfNum = 20; 
@@ -139,13 +141,38 @@ function executeProblem05() {
                 console.log(iterator_1);
                 stop = true;
             }
-        }
-        
+        }     
     }
+}
+
+// problem 6 - Project Euler
+
+function executeProblem06() {
+
+    var maxValue = 100;
+    var sumOfSqaredNum = 0;
+    var sumSquared = 0;
+
+    function sum01() {
+        let temp01 = 0;
+        for (iterator_1 = 1; iterator_1 <= maxValue; iterator_1++) {
+            temp01 += (iterator_1 ** 2);
+        }
+        return temp01;
+    } 
+
+    function sum02() {
+        let temp02 = 0;
+        for (iterator_2 = 1; iterator_2 <= maxValue; iterator_2++) {
+            temp02 += iterator_2;
+        }
+        return temp02 ** 2;
+    } 
+
+    console.log(sum01() - sum02());
 
 
     
-
 
 }
 
